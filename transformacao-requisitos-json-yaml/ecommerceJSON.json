@@ -1,13 +1,30 @@
 {
     "product": {
-        "name": "Notebook Acer Nitro 5",
-        "description": "Poderoso notebook para jogos",
-        "price": 3499,
-        "availability": true,
-        "category": "Notebook",
-        "images": [
-            "https://example.com/image1.jpg",
-            "https://example.com/image2.jpg"
-        ]
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+        },
+        "price": {
+            "type": "number",
+            "minimum": 0.01
+        },
+        "availability": {
+            "type": "boolean"
+        },
+        "category": {
+            "type": "string"
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
     }
 }
