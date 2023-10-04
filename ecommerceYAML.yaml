@@ -1,0 +1,9 @@
+product:
+    name: Notebook Acer Nitro 5
+    description: Poderoso notebook para jogos
+    price: 3499
+    availability: false
+    category: Notebook
+    images:
+        - 'https://example.com/image1.jpg'
+        - 'https://example.com/image2.jpg'
